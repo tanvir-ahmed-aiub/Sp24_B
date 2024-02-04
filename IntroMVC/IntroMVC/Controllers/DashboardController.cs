@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using IntroMVC.Models;
 
 namespace IntroMVC.Controllers
 {
@@ -11,15 +12,19 @@ namespace IntroMVC.Controllers
         // GET: Dashboard
         public ActionResult Profile()
         {
-            var name = "Tanvir";
-            var id = 1;
-            var cgpa = 3.45f;
+            var s1 = new Student();
+            s1.name = "Tanvir";
+            s1.id = "1";
+            s1.cgpa = 3.45f;
 
-            
+            var s2 = new Student();
+            s2.name = "Sabbir";
+            s2.id = "2";
+            s2.cgpa = 3.0f;
 
-            ViewBag.Name = name;
-            ViewBag.Id = id;
-            ViewBag.Cgpa = cgpa;
+            Student[] students = new Student[] { s1, s2 };
+
+            ViewBag.Students = students;                   
             return View();
         }
     }

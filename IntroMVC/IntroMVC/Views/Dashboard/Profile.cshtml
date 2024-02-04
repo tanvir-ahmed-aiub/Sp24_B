@@ -1,15 +1,25 @@
-﻿<h2>Profile</h2>
+﻿@{ 
+
+    string a = "OK";
+    <h1>@a</h1>
+
+}
+
+<h2>Profile</h2>
 <h3>Welcome to Dashboard</h3>
-<table class="table table-bordered" >
+<table class="table table-bordered">
     <tr>
         <th>Name</th>
         <th>Id</th>
         <th>Cgpa</th>
     </tr>
-    <tr>
-        <td>@ViewBag.Name</td>
-        <td>@ViewBag.Id</td>
-        <td>@ViewBag.Cgpa</td>
-    </tr>
+    @foreach (var item in ViewBag.Students) { 
+        <tr>
+            <td>@item.name</td>
+            <td>@item.id</td>
+            <td>@item.cgpa</td>
+        </tr>
+        
+    }
 </table>
 

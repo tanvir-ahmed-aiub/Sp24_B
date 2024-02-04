@@ -21,7 +21,7 @@ namespace IntroMVC.Controllers
             //authentication
             //if ok
 
-            return Redirect("https://www.aiub.edu");//for external redirection
+            //return Redirect("https://www.aiub.edu");//for external redirection
             return RedirectToAction("Profile","Dashboard"); //for internal redirection
             
         }
