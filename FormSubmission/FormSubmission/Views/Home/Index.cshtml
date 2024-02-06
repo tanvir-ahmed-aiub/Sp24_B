@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@if (Model != null)
+{
+    <p>@Model["Name"]</p>
+}
+
+<h2>Index</h2>
+<form action="" method="post">
+    <input type="text" name="Name" placeholder="Name" class="form-control" />
+    <input type="text" name="Uname" placeholder="Username" class="form-control" />
+    Gender: <input type="radio" name="Gender" value="Male" />Male
+    <input type="radio" name="Gender" value="Female" />Female
+    <br />
+    Profession:
+    <select class="form-control" name="Profession">
+        <option selected disabled>Select</option>
+        <option>Student</option>
+        <option>Business</option>
+    </select>
+    <br />
+    Hobbies:
+    <input type="checkbox" name="Hobbies[]" />Travelling
+    <input type="checkbox" name="Hobbies[]" />Sports
+    <input type="checkbox" name="Hobbies[]" />Music
+    <input type="checkbox" name="Hobbies[]" />Video Games
+    <br />
+    <input type="submit" value="Sign Up" class="btn btn-danger" />
+</form>
+
