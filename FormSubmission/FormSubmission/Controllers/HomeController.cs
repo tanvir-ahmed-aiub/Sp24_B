@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormSubmission.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,7 +12,15 @@ namespace FormSubmission.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            return View(new Person());
+        }
+        [HttpPost]
+        public ActionResult Index(Person p) 
+        {
+            if (ModelState.IsValid) { //will validate the object based on the rules applied in class
+                return RedirectToAction("Contact");
+            }
+            return View(p);
         }
         //[HttpPost]
         //public ActionResult Index(FormCollection fc) {
@@ -19,10 +28,10 @@ namespace FormSubmission.Controllers
         //    string uname = fc["Uname"];
         //    return View(fc);
         //}
-        [HttpPost]
-        public ActionResult Index(string Name, string Uname) { 
-            return View();
-        }
+        //[HttpPost]
+        //public ActionResult Index(string Name, string Uname) { 
+        //    return View();
+        //}
         public ActionResult Index2() { 
             return View();
         }
