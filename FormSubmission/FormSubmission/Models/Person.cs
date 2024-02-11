@@ -10,7 +10,7 @@ namespace FormSubmission.Models
     public class Person
     {
         [Required(ErrorMessage ="Please provide name")]
-        [StringLength(100,ErrorMessage ="Name must be less than 100")]
+        [StringLength(10,ErrorMessage ="Name must be less than 10")]
         
         public string Name { get; set; }
         [Required]
