@@ -15,7 +15,7 @@ namespace FormSubmission.Models
         public string Name { get; set; }
         [Required]
         [StringLength(5,MinimumLength =2)]
-        public string Uname { get; set; }
+        public string Username { get; set; }
         [Required]
         public string Gender { get; set; }
         [Required]

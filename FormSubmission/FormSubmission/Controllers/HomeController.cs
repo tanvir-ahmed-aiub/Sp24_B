@@ -1,4 +1,5 @@
-﻿using FormSubmission.Models;
+﻿using FormSubmission.EF;
+using FormSubmission.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,10 +15,23 @@ namespace FormSubmission.Controllers
         {
             return View(new Person());
         }
+        public ActionResult List()
+        {
+            var db = new sp24_bEntities();
+            //var data = db.Users.ToList();
+            var data=(from st in db.Users
+             where st.Roll >= 1 && st.Roll <= 500
+             select st).ToList();
+            return View(data);
+        }
         [HttpPost]
-        public ActionResult Index(Person p) 
+        public ActionResult Index(User p) 
         {
             if (ModelState.IsValid) { //will validate the object based on the rules applied in class
+                var db = new sp24_bEntities();
+                p.Email = "demo@demo.com";
+                db.Users.Add(p);
+                db.SaveChanges();
                 return RedirectToAction("Contact");
             }
             return View(p);
