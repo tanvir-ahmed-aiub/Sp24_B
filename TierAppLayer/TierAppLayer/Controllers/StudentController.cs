@@ -19,10 +19,18 @@ namespace TierAppLayer.Controllers
             
         }
         [HttpGet]
+        [Route("api/student/{id}")]
+        public HttpResponseMessage Get(int id) {
+            var data = StudentService.Get(id);
+            return Request.CreateResponse(HttpStatusCode.OK, data);
+        }
+        [HttpGet]
         [Route("api/student/all")]
-        public HttpResponseMessage Get() {
+        public HttpResponseMessage Get()
+        {
             var data = StudentService.Get();
             return Request.CreateResponse(HttpStatusCode.OK, data);
         }
+
     }
 }

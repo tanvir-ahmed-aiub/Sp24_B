@@ -1,0 +1,13 @@
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\ConsolePresetation.exe.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\ConsolePresetation.exe
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\ConsolePresetation.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\BLL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\DAL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\BLL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\bin\Debug\DAL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\obj\Debug\ConsolePresetation.csproj.AssemblyReference.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\obj\Debug\ConsolePresetation.csproj.SuggestedBindingRedirects.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\obj\Debug\ConsolePresetation.csproj.CoreCompileInputs.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\obj\Debug\ConsolePresetation.csproj.CopyComplete
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\obj\Debug\ConsolePresetation.exe
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\ConsolePresetation\obj\Debug\ConsolePresetation.pdb

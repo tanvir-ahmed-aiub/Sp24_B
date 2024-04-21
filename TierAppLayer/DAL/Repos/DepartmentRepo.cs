@@ -1,4 +1,6 @@
-﻿using DAL.EF.Models;
+﻿using DAL.EF;
+using DAL.EF.Models;
+using DAL.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,18 +9,31 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    public class DepartmentRepo
+    internal class DepartmentRepo :Repo, IRepo<Department, int, bool>
     {
-        public void Create(Department s) { }
-        public List<Department> Get()
+        public void Create(Department obj)
         {
-            return null;
+            throw new NotImplementedException();
         }
+
+        public bool Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Department Get(int id)
         {
-            return null;
+            throw new NotImplementedException();
         }
-        public void Update(Department s) { }
-        public void Delete(int id) { }
+
+        public List<Department> Get()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Update(Department obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

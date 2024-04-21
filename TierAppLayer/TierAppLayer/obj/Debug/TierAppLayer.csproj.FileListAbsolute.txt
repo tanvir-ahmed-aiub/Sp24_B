@@ -67,3 +67,12 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\obj\Debug\TierApp
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\obj\Debug\TierAppLayer.csproj.CopyComplete
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\obj\Debug\TierAppLayer.dll
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\obj\Debug\TierAppLayer.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\DAL.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\DAL.pdb
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\EntityFramework.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\EntityFramework.SqlServer.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\EntityFramework.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\EntityFramework.SqlServer.xml
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\DAL.dll.config
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\AutoMapper.dll
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\TierAppLayer\bin\AutoMapper.xml

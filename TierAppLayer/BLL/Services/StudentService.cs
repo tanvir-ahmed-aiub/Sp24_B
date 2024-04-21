@@ -1,4 +1,6 @@
-﻿using BLL.DTOs;
+﻿using AutoMapper;
+using BLL.DTOs;
+using DAL;
 using DAL.EF.Models;
 using DAL.Repos;
 using System;
@@ -12,15 +14,30 @@ namespace BLL.Services
     public class StudentService
     {
         public static void Create(StudentDTO s) {
-            //conversion to ef model
-            var sm = new Student(); //converted ef model
-            new StudentRepo().Create(sm);
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<StudentDTO, Student>();
+            });
+            var mapper = new Mapper(config);
+            var cnv = mapper.Map<Student>(s);
+            DataFactory.StudentData().Create(cnv);
+        }
+        public static StudentDTO Get(int id) {
+            
+            var data = DataFactory.StudentData().Get(id);
+            var config = new MapperConfiguration(cfg =>{
+                cfg.CreateMap<Student,StudentDTO>();
+            });
+            var mapper = new Mapper(config);
+            return mapper.Map<StudentDTO>(data);
         }
         public static List<StudentDTO> Get() {
-            var data = new StudentRepo().Get();
-            //convert ef model to dto
-            var d2 = new List<StudentDTO>(); //converted data
-            return d2;
+            var data = DataFactory.StudentData().Get();
+            var config = new MapperConfiguration(cfg => {
+                cfg.CreateMap<Student, StudentDTO>();
+            });
+            var mapper = new Mapper(config);
+            return mapper.Map<List<StudentDTO>>(data);
+             
         }
     }
 }
