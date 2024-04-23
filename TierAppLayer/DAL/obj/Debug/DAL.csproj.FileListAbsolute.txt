@@ -12,3 +12,5 @@ C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\DAL\bin\Debug\EntityFramework.
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\DAL\obj\Debug\DAL.Migrations.InitDB.resources
 C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\DAL\obj\Debug\DAL.Migrations.AddCourse.resources
+C:\Users\Tanvir Ahmed\Desktop\.NET\B\TierAppLayer\DAL\obj\Debug\DAL.Migrations.FKPKDeptCourse.resources

@@ -23,12 +23,12 @@ namespace DAL.Repos
 
         public Department Get(int id)
         {
-            throw new NotImplementedException();
+            return db.Departments.Find(id);
         }
 
         public List<Department> Get()
         {
-            throw new NotImplementedException();
+            return db.Departments.ToList();
         }
 
         public bool Update(Department obj)

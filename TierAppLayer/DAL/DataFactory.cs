@@ -12,7 +12,7 @@ namespace DAL
     public class DataFactory
     {
         public static IRepo<Student,int,bool> StudentData() {
-            return new StudentRepo();
+            return new StudentRepoV2();
         }
         public static IRepo<Department, int, bool> DepartmentData() {
             return new DepartmentRepo();

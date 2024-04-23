@@ -51,18 +51,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DataFactory.cs" />
+    <Compile Include="EF\Models\Course.cs" />
     <Compile Include="EF\Models\Department.cs" />
     <Compile Include="EF\Models\Student.cs" />
     <Compile Include="EF\UMSContext.cs" />
+    <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202404210835327_InitDB.cs" />
     <Compile Include="Migrations\202404210835327_InitDB.designer.cs">
       <DependentUpon>202404210835327_InitDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404230900000_AddCourse.cs" />
+    <Compile Include="Migrations\202404230900000_AddCourse.designer.cs">
+      <DependentUpon>202404230900000_AddCourse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404230908186_FKPKDeptCourse.cs" />
+    <Compile Include="Migrations\202404230908186_FKPKDeptCourse.designer.cs">
+      <DependentUpon>202404230908186_FKPKDeptCourse.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\DepartmentRepo.cs" />
+    <Compile Include="Repos\Repo.cs" />
     <Compile Include="Repos\StudentRepo.cs" />
+    <Compile Include="Repos\StudentRepoV2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -72,7 +84,14 @@
     <EmbeddedResource Include="Migrations\202404210835327_InitDB.resx">
       <DependentUpon>202404210835327_InitDB.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404230900000_AddCourse.resx">
+      <DependentUpon>202404230900000_AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404230908186_FKPKDeptCourse.resx">
+      <DependentUpon>202404230908186_FKPKDeptCourse.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
